@@ -1,0 +1,387 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>MyBlog.com</title>
+	
+	
+		<style type="text/css">
+		
+			nav{
+				
+				ul{	
+					display: flex;
+					flex-direction: row;
+					gap: 3rem; 
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					justify-content: center;
+					li{
+						a{
+						background-color: #bbc3fc;
+						border: solid #8b99cc 2px;
+						border-radius: 10px;
+						font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+						padding: 0.125rem 0.5rem;
+				
+						}	
+					}
+				}
+			}
+			
+			
+			li.nav-item a:link{
+				color: #4B5871;
+			}
+
+			li.nav-item a:hover{
+				color: blue;
+			}
+			li.nav-item a:active{
+				color: #FA6D89;
+			}
+			
+			ul>li{	
+				padding: 0.2em;
+			}
+			
+			body{
+				background-color: #f5aeae;
+				min-height: 100vh;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+			}
+			
+			blockquote{
+				font-size: 1.5rem;
+				font-family: serif;
+				line-height: 1.5rem;
+				margin: 1% 0% 1% 6%;
+			}
+			
+			blockquote:before{
+				font-size: 4rem;
+				vertical-align: -1.1rem;
+				line-height: 0;
+				content: "\201C";
+			}
+			
+			
+			
+			h1, h2, h3, h4{
+				margin: 0;
+			}
+			
+			.content{
+				flex: 1; 
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				padding: 1rem;
+			}
+			
+			.blogContainer{
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				gap: 3rem;
+				
+				
+				img{
+					box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+					max-width: 65rem;
+					align-self: left;
+					border-radius: 10px;
+				}
+			}
+			
+			header{
+				font-size: 1.5rem;
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				margin: 1rem 0;
+			}
+			
+			.user{
+				background-color: #bbc3fc;
+				border: solid #8b99cc 2px;
+				border-radius: 10px;
+				padding: 1rem;
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+				.userName{
+					font-size: 1.5rem;
+				}
+			}
+			
+			article{;
+				background-color: #ddcede;
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				gap: 0.5rem;
+				border: solid #c59fcc 2px;
+				border-radius: 10px;
+				padding: 1rem;
+				
+				.articleTitle{
+					font-size: 1.5rem;
+				}
+				.articleFooter{
+					font-weight: lighter;
+					display: flex;
+					flex-direction: row;
+				}
+				
+			}
+	
+			footer{
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				margin: 1rem 0;
+				margin-top: auto;
+			}
+
+		</style>
+		
+	
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
+		"></script>
+	<![endif]-->
+<head>
+
+<body>
+	<div class="content">	
+		<header> 
+			<h1>
+				MyBlog
+			</h1>
+		</header>
+		<nav>
+			<ul>
+				
+				<li class="nav-item"><a href="Gamer Gear.html">Gamer Gear</a></li>
+				<li class="nav-item"><a href="Cute Bats.html">Cute Bats</a></li>
+				<li class="nav-item"><a href="Pasta Lovers.html">Pasta Lovers</a></li>
+				<li class="nav-item"><a href="Sport Stats.html">Sport Stats</a></li>
+					
+						
+					
+				
+			</ul>			
+		</nav>
+		
+		<div class="blogContainer">
+			<div class="user">
+				<h2 class="userName">Marcus Rossing</h2>
+				<h3 class="userDescription">
+					Hi, I'm Marcus, and this is my blog!
+					<br>
+					In this blog, I talk about different elements of HTML and CSS that I think are interesting and important.
+					<br>
+					
+				</h3>
+			</div>
+			
+			<article>
+				<h2 class="articleTitle">Good heading paragraphs important to getting ahead of the competition.</h2>	
+				<h3>Why Heading Paragraphs Matter</h3>
+				<p>
+					Heading paragraphs are important to use to separate sub-sections. 
+					By separating your paragraphs into  sub-sections, it also helps the user have a better general idea of what they are reading.
+					To use heading paragraphs effectively, you need to adhere to the heading hierarchy
+					Here are a few general rules you should follow:
+					<br>
+					First: h1 should only be used once per page.
+					<br>
+					Second: h2 to should be used to introduce articles.
+					<br>
+					Third: h3 should be used it introduce sub-sections of articles.
+				</p>
+				
+				
+				<div class="articleFooter"> 
+					<h4>Marcus Rossing | </h4> 
+					<h4><time datetime="2025-1-22 18:39"> 2025-1-23 11:10</h4>	
+				</div>
+			</article>
+			
+			<article>
+				<h2 class="articleTitle">Make sure to double check your syntax.</h2>	
+				<h3>Why good syntax matters</h3>
+				<p>
+					Having the correct syntax for the language you are programming in is one of the most important parts of coding. 
+					All it takes is one typo and your whole program doesn't work.
+					Syntax errors are a common mistake new programmers make, the main way to avoid them is to practice more. 
+					However, there are some good habits that help you stop making these mistakes. One good habit is to always close a statement when you make one. 
+					<br>
+					Here's and example: 
+					<br>
+					<figure>
+					<img src="MyBlog Assets/HTML Syntax Example_1.png">
+					<figcaption>HTML Syntax Example</figcaption>
+					</figure>
+				</p>
+				
+				
+				<div class="articleFooter"> 
+					<h4>Marcus Rossing | </h4> 
+					<h4><time datetime="2025-1-22 18:39"> 2025-1-21 13:32</h4>	
+				</div>
+			</article>
+			
+			<article>
+				<h2 class="articleTitle">Hexadecimals are pretty interesting.</h2>	
+				<h3>A brief explanation of hexadecimals</h3>
+				<p>
+					Hexadecimals are a base 16 number system, the number system we normally use is base 10.
+					Because hexadecimals are a base 16 number system this means it goes from 0-9, then A-F, and after F they loop back to 0 and add a digit to the number. 
+					As opposed to 0-9 which we are used too. 
+					<br>
+					One major use for hexadecimals is storing colors. 
+					There are three main colors that hexadecimals store, red, green, and blue.
+					By combining different percentages of these three colors we can change the hue and make new colors. 
+					We store each of these colors as 2 hexadecimal digits, all in one string, red would be #FF0000.
+					<br>
+					The FF is the red, and FF is the highest a 2 digit hexadecimal can go.
+					The four 0s are the green and blue, both of them are set to the lowest hexadecimal value.
+					<br>
+					Here's an example:
+					<br>
+					<figure>
+					<img src="MyBlog Assets/Hexadecimal Color Example_1.png">
+					<figcaption>Hexadecimal Color Example</figcaption>
+					</figure>
+				</p>
+				
+				
+				<div class="articleFooter"> 
+					<h4>Marcus Rossing | </h4> 
+					<h4><time datetime="2025-1-22 18:39"> 2025-1-26 20:45</h4>	
+				</div>
+			</article>
+			
+			<article>
+				<h2 class="articleTitle">Why should you care about HTML Whitespace?</h2>	
+				<h3>The importance of Whitespace in HTML</h3>
+				<p>
+					In HTML and almost any other programming language, whitespace is crucial to having a readable program and website.
+					Having bad whitespace can make a program almost unreadable.
+					<br>
+					This may be okay if you're the only one working on it, but if you are a part of a team, depending on how bad your whitespacing is, your coworkers can range from being annoyed to almost having an aneurysm trying to read your code.
+					<br>
+					To put it another way, imagine trying to read a book or an article without any punctuation at all, it's doable, but it will not be a fun time.
+				</p>
+				
+				<div class="articleFooter"> 
+					<h4>Marcus Rossing | </h4> 
+					<h4><time datetime="2025-1-22 18:39"> 2025-1-24 12:21</h4>	
+				</div>
+			</article>
+			
+			<article>
+				<h2 class="articleTitle">Fonts can make a bold statement.</h2>	
+				<h3>The usefulness of fonts</h3>
+				<p>
+					Fonts are important to what vibe you want to give your website.
+					There are countless different types of fonts and ways to customize your text, so it may seem a bit overwhelming.
+					But fear not, for I am here.
+					<br>
+					There are four main things you want to focus on when making your font, color, size, weight, and family.
+					<br>
+					<br>
+					Color: The color of a font is usually black, but if you want to spice it up a little try using the opposite color of your websites background.
+					<br>
+					<br>
+					Size: The size is usually dictated by the subsection it is on.
+					For example the h1 header of your website will usually be biggest text on that page.
+					<br>
+					<br>
+					Weight: Your font weight is how thick or thin your text will be, keep in mind this will change the size of your text, but it wont be that noticeable of a difference.
+					<br>
+					<br>
+					Font Family: A font family is the type of font, such as Times-new-roman, I'm using Futura for this blog.
+					<br>
+					<br>
+					The font you choose is really just personal preference. One thing to consider is to take into account what type of website you are making when choosing the style of your font. 
+				</p>
+				
+				<div class="articleFooter"> 
+					<h4>Marcus Rossing | </h4> 
+					<h4><time datetime="2025-1-22 18:39"> 2025-1-24 16:27</h4>	
+				</div>
+			</article>
+			
+			<article>
+				<h2 class="articleTitle">Lorem Ipsum</h2>	
+				<h3>What Lorem Ipsum is?</h3>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+				</p>
+				<h3>Why do we use it?</h3>
+				<p>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+				The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+				Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				</p>
+				
+				<h3>Where does it come from?</h3>
+				<p>
+				Contrary to popular belief, Lorem Ipsum is not simply random text.
+				It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+				Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+				Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+				This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+				<br>
+				<br>
+				The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+				Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+				</p>
+				
+				<h3>Where can I get some?</h3>
+				<p>
+				There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+				If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+				All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+				It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+				The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+				</p>
+				
+				<h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
+				<blockquote>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</blockquote>
+				
+				
+				<div class="articleFooter"> 
+					<h4>Marcus Rossing | </h4> 
+					<h4><time datetime="2025-1-22 18:39"> 2025-1-24 16:27</h4>	
+				</div>
+			</article>
+		</div>
+				
+		<footer>
+			<span> 
+				Copyright &#169; 2025 MyBlog. All Rights Reserved
+			</span>
+		</footer>
+	</div>
+</body>
+</html>
